@@ -30,34 +30,37 @@
           <span class="mdl-layout-title">Fibonacci</span>
         </div>
       </header>
-      <!-- Numeric Textfield -->
-      <form action="#">
-        <div
-          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+      <main class="mdl-layout__content">
+        <div class="page-content">Click The Button.</div>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div
+            class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+          >
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="number"
+            />
+            <label class="mdl-textfield__label" for="number">Number...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <br />
+        <!-- Coloured raised Button -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="calculate()"
         >
-          <input
-            class="mdl-textfield__input"
-            type="text"
-            pattern="-?[0-9]*(\.[0-9]+)?"
-            id="number"
-          />
-          <label class="mdl-textfield__label" for="number">Number...</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-      </form>
-      <br />
-      <!-- Coloured raised Button -->
-      <button
-        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-        onclick="calculate()"
-      >
-        Calculate
-      </button>
-      <br />
-      <br />
-      <div id="answer"></div>
-      <div class="output"></div>
-      <!-- pass -->
+          Calculate
+        </button>
+        <br />
+        <br />
+        <div id="answer"></div>
+        <div class="output"></div>
+        <!-- pass -->
+      </main>
     </div>
   </body>
 </html>
