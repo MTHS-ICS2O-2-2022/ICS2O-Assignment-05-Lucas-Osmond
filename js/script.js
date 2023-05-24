@@ -18,8 +18,7 @@ function calculate()
     nextTerm = number1 + number2
     number1 = number2
     number2 = nextTerm
-    console.log(number1)
-    //document.getElementById(number1).innerHTML = "<p>" + number1 + "</p><br>" * -1
+    //console.log(number1)
     document.getElementById('answer').innerHTML = 'The answer is ' + number1
   }
 }  
