@@ -22,4 +22,3 @@ function calculate()
     document.getElementById('answer').innerHTML = 'The answer is ' + number1
   }
 }  
-
